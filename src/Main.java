@@ -5,11 +5,11 @@ public class Main {
   //      Candidate candidate3 = new Candidate("Drake");
 
 
-  /*      candidate1.voteFor();
+        candidate1.voteFor();
         candidate1.print();
         candidate1.voteFor();
         candidate1.print();
         System.out.println(candidate1.getName());
-        System.out.println(candidate1.getVotes()); */
+        System.out.println(candidate1.getVotes());
     }
 }
