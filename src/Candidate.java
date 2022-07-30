@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Candidate {
+public class Candidate implements Comparable<Candidate> {
     String name;
     int votes = 0;
 
@@ -25,5 +25,10 @@ public class Candidate {
 
     public void print () {
         System.out.println(name + " has " + votes + " votes.");
+    }
+
+    @Override
+    public int compareTo(Candidate o) {
+        return this.getVotes() - o.getVotes();
     }
 }
