@@ -58,9 +58,20 @@ public class Election {
     }
 
     public int removeLast() {
-        Collections.sort(candidateList);
+        Collections.sort(candidateList, Collections.reverseOrder());    // 6, 5, 4, 3
+        int lowestCandidateVotes = candidateList.get(candidateList.size() - 1).getVotes(); // 3
+        int candidatesRemoved = 0; // 0
+        int index = candidateList.size() - 1;
 
-        return 0;
+        for (int i = index; i >= 0; i--) { // i = 2
+            System.out.println(i);
+            if (candidateList.get(i).getVotes() == lowestCandidateVotes) { // 3 == 5
+                candidateList.remove(candidateList.get(i));
+                candidatesRemoved++;
+            }
+        }
+        System.out.println("End of remove last");
+        return candidatesRemoved;
     }
 
 

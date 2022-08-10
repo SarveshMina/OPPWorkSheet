@@ -21,8 +21,11 @@ public class Main {
         candidate1.voteFor();
         candidate1.voteFor();
         candidate1.voteFor();
+        candidate1.voteFor();
 
         // Sarvesh has 4 Votes
+        candidate2.voteFor();
+        candidate2.voteFor();
         candidate2.voteFor();
         candidate2.voteFor();
         candidate2.voteFor();
@@ -40,11 +43,17 @@ public class Main {
         candidate4.voteFor();
         candidate4.voteFor();
         candidate4.voteFor();
+        candidate4.voteFor();
+        candidate4.voteFor();
+        candidate4.voteFor();
 
         // Printing all Candidates Information with No.Votes
 
         election.printAll();
         System.out.println("\n\n");
         election.findTopCandidates(4);
+
+        System.out.println(election.removeLast());
+        election.printAll();
     }
 }
