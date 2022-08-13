@@ -20,13 +20,8 @@ public class Main {
         candidate1.voteFor();
         candidate1.voteFor();
         candidate1.voteFor();
-        candidate1.voteFor();
-        candidate1.voteFor();
 
         // Sarvesh has 4 Votes
-        candidate2.voteFor();
-        candidate2.voteFor();
-        candidate2.voteFor();
         candidate2.voteFor();
         candidate2.voteFor();
         candidate2.voteFor();
@@ -40,7 +35,6 @@ public class Main {
         candidate3.voteFor();
 
         // Rohit has 3 Votes
-        candidate4.voteFor();
         candidate4.voteFor();
         candidate4.voteFor();
         candidate4.voteFor();

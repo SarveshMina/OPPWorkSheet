@@ -57,7 +57,7 @@ public class Election {
         return TopCandidates;
     }
 
-    public int removeLast() {
+    /*public int removeLast() {
         Collections.sort(candidateList, Collections.reverseOrder());    // 6, 5, 4, 3
         int lowestCandidateVotes = candidateList.get(candidateList.size() - 1).getVotes(); // 3
         int candidatesRemoved = 0; // 0
@@ -72,6 +72,28 @@ public class Election {
         }
         System.out.println("End of remove last");
         return candidatesRemoved;
+    }*/
+
+    public int removeLast() {
+
+        int removeLast = 0;
+
+        if () {
+
+        }
+        for (int i = 0; i <= candidateList.size() - 2; i++) {
+            for (int j = 1; j <= candidateList.size() - 1; j++) {
+                if (candidateList.get(j).getVotes() < candidateList.get(i).getVotes()) {
+                    removeLast++;
+                    candidateList.remove(candidateList.get(j));
+
+                } else if (candidateList.get(j).getVotes() ==  candidateList.get(i).getVotes()) {
+                    return removeLast;
+                }
+            }
+        }
+        printAll();
+        return removeLast;
     }
 
 
